@@ -13,6 +13,6 @@
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="244dp"
         android:layout_height="265dp"
-        android:src="@drawable/loading2" />
+        android:src="@drawable/loading1" />
 
 </LinearLayout>

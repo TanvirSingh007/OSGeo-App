@@ -1,74 +1,70 @@
 package com.example.osgeo
 
-import android.os.Bundle
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.projects_row.view.*
-import android.content.Intent
 
-class MainAdapter: RecyclerView.Adapter<CustomViewHolder>() {
 
-    val ProjectTitles = listOf("deegree", "GDAL/OGR", "GeoMoose", "GeoNetwork", "GeoNode")
 
-    //number of items
-    override fun getItemCount(): Int {
-        return ProjectTitles.size
-    }
+class MainAdapter(private val context: Context, private val hobbies: List<PROJECTS>) :
+    RecyclerView.Adapter<MainAdapter.CustomViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
-        val layoutInflater = LayoutInflater.from(parent?.context)
-        val cellForRow = layoutInflater.inflate(R.layout.projects_row, parent, false)
-        return CustomViewHolder(cellForRow)
-    }
+    private var myOnClickListener: MyOnClickListener? = null
 
-    override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        val projectTitle = ProjectTitles.get(position)
-        holder?.view?.project_name?.text = projectTitle
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder =
+        CustomViewHolder(LayoutInflater.from(context).inflate(R.layout.projects_row, parent, false))
 
-        if (projectTitle == "deegree") {
-            val thumbnailImageView = holder?.view?.project_image
-            thumbnailImageView.setImageResource(R.drawable.deegree)
+
+        override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
+            holder.itemView.project_name?.text = hobbies[position].title
+
+            if (holder.itemView.project_name?.text == "deegree") {
+                val thumbnailImageView = holder?.itemView?.project_image
+                thumbnailImageView.setImageResource(R.drawable.deegree)
+            }
+
+            if (holder.itemView.project_name?.text == "GDAL/OGR") {
+                val thumbnailImageView = holder?.itemView?.project_image
+                thumbnailImageView.setImageResource(R.drawable.gdal)
+            }
+
+            if (holder.itemView.project_name?.text == "GeoMoose") {
+                val thumbnailImageView = holder?.itemView?.project_image
+                thumbnailImageView.setImageResource(R.drawable.geomoose)
+            }
+
+            if (holder.itemView.project_name?.text == "GeoNetwork") {
+                val thumbnailImageView = holder?.itemView?.project_image
+                thumbnailImageView.setImageResource(R.drawable.geonetwork)
+            }
+
+            if (holder.itemView.project_name?.text == "GeoNode") {
+                val thumbnailImageView = holder?.itemView?.project_image
+                thumbnailImageView.setImageResource(R.drawable.geonode)
+            }
+
         }
 
-        if (projectTitle == "GDAL/OGR") {
-            val thumbnailImageView = holder?.view?.project_image
-            thumbnailImageView.setImageResource(R.drawable.gdal)
+        override fun getItemCount(): Int = hobbies.size
+
+        fun setMyOnClickListener(myOnClickListener: MyOnClickListener) {
+            this.myOnClickListener = myOnClickListener
         }
 
-        if (projectTitle == "GeoMoose") {
-            val thumbnailImageView = holder?.view?.project_image
-            thumbnailImageView.setImageResource(R.drawable.geomoose)
-        }
-
-        if (projectTitle == "GeoNetwork") {
-            val thumbnailImageView = holder?.view?.project_image
-            thumbnailImageView.setImageResource(R.drawable.geonetwork)
-        }
-
-        if (projectTitle == "GeoNode") {
-            val thumbnailImageView = holder?.view?.project_image
-            thumbnailImageView.setImageResource(R.drawable.geonode)
-        }
-
-
-    }
-}
-
-    class CustomViewHolder(val view: View): RecyclerView.ViewHolder(view) {
-companion object{
-
-}
-        init {
-            view.setOnClickListener {
-                val intent = Intent(view.context, Webview::class.java)
-                view.context.startActivity(intent)
+        inner class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+            init {
+                itemView.setOnClickListener {
+                    myOnClickListener?.myOnClick(adapterPosition)
+                }
             }
         }
-
     }
+
+
+
 
 
 
