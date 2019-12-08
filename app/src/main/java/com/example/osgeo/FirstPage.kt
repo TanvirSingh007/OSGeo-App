@@ -27,17 +27,15 @@ class FirstPage : AppCompatActivity(), MyOnClickListener {
         val name = ProjectSupplier.projects[position].title
         if (name == "deegree") {
             startActivity(
-                Intent(this, Webview::class.java)
+                Intent(this, track_Login::class.java)
             )
         }
         else {
             startActivity(
-                Intent(this, pr_webview::class.java).putExtra(
-                    "hobby_name",
-                    ProjectSupplier.projects[position].title
+                Intent(this, Github_Login::class.java)
                 )
 
-            )
+
 
         }
     }

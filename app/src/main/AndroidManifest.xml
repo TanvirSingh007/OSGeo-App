@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstPage"
-                  android:theme="@style/Theme.AppCompat.Light"
-                  android:label="Projects"
-            ></activity>
-        <activity android:name=".MainActivity"
-                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <activity android:name=".Github_Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".track_Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".FirstPage"
+            android:label="Projects"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,10 +29,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Webview">
-                  <meta-data android:name="android.support.PARENT_ACTIVITY"
-                      android:value=".Webview"/>
-    </activity>
     </application>
 
 </manifest>
