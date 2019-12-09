@@ -5,21 +5,33 @@ Here are all the things that I made for the OSGeo-App
 # What I made
 
 - Icon:-
+
 <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/icon.png?raw=true"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
+
 I made the icon using Adobe Illustrator
+
+
 - Splash Screen:-
+
  <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/splash_screen.png?raw=true"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
+
 Here I created an animated gif for the splash screen using Adobe After Effects and Adobe Photoshop.
+
+
 - Home Page with Projects:-
+
  <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/home_page.png?raw=true"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
 I added a few of the projects directly to the app directory temporarily as the api is not available. Also I made the page using recyclerView.
+
+
 - Login Page for OSGeo-Track and Github:-
+
  <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/login_1.png?raw=true"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
