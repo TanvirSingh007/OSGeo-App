@@ -7,6 +7,7 @@ Here are all the things that I made for the OSGeo-App
 - Icon:-
 
 ![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/icon.png?raw=true)
+
 I made the icon using Adobe Illustrator. I followed the google's material style to create the icon. I downloaded the logo from OSGeo's website and edited it to a reshaped logo.
 
 
@@ -20,7 +21,7 @@ Here I created an animated gif for the splash screen using Adobe After Effects a
 - Home Page with Projects:-
 
 ![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/home_page.png?raw=true)
-style="float: left; margin-right: 10px;" />
+
 I made the page using recyclerView. Firstly I created a layout for a single project. Then I joined it to the recyclerView. I made a different file for project names and added a few of the projects to it as the api is not available. The code was like taking the count of the projects and displayed them one by one. Also I paired the correct image with the correct title. Then I added onclickListener to the imageview so as to get to the correct login page as it was required to.
 
 
