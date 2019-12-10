@@ -10,7 +10,7 @@ Here are all the things that I made for the OSGeo-App
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
 
-I made the icon using Adobe Illustrator
+I made the icon using Adobe Illustrator. I followed the google's material style to create the icon. I downloaded the logo from OSGeo's website and edited it to a reshaped logo.
 
 
 - Splash Screen:-
@@ -19,7 +19,7 @@ I made the icon using Adobe Illustrator
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
 
-Here I created an animated gif for the splash screen using Adobe After Effects and Adobe Photoshop.
+Here I created an animated gif for the splash screen using Adobe After Effects and Adobe Photoshop. I downloaded the png file of the logo and animated it in after effects and then used photoshop to export as a gif. Then I used some of the external libraries to ad the gif to imageview and holded the activity using countdown timer for 3 seconds before going to the next activity.
 
 
 - Home Page with Projects:-
@@ -27,7 +27,7 @@ Here I created an animated gif for the splash screen using Adobe After Effects a
  <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/home_page.png?raw=true"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
-I added a few of the projects directly to the app directory temporarily as the api is not available. Also I made the page using recyclerView.
+I made the page using recyclerView. Firstly I created a layout for a single project. Then I joined it to the recyclerView. I made a different file for project names and added a few of the projects to it as the api is not available. The code was like taking the count of the projects and displayed them one by one. Also I paired the correct image with the correct title. Then I added onclickListener to the imageview so as to get to the correct login page as it was required to.
 
 
 - Login Page for OSGeo-Track and Github:-
@@ -38,6 +38,7 @@ style="float: left; margin-right: 10px;" />
  <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/login_2.png?raw=true"  
 alt="Markdown Monster icon"  
 style="float: left; margin-right: 10px;" />
+There was not much action in the login pages, almost all of it was just designing it. I took a few references from the internet for the designs that I could possibly make. I had a little bit experience in CSS so it was easy to understand how to do that. I made different files for text background, page background and the login button. Also I created variables for colors that were same color was used in multiple things.
 
 ## What I learned
 
