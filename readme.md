@@ -6,38 +6,29 @@ Here are all the things that I made for the OSGeo-App
 
 - Icon:-
 
-<img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/icon.png?raw=true"  
-alt="Markdown Monster icon"  
-style="float: left; margin-right: 10px;" />
-
+![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/icon.png?raw=true)
 I made the icon using Adobe Illustrator. I followed the google's material style to create the icon. I downloaded the logo from OSGeo's website and edited it to a reshaped logo.
 
 
 - Splash Screen:-
 
- <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/splash_screen.png?raw=true"  
-alt="Markdown Monster icon"  
-style="float: left; margin-right: 10px;" />
+ ![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/splash_screen.png?raw=true)
 
 Here I created an animated gif for the splash screen using Adobe After Effects and Adobe Photoshop. I downloaded the png file of the logo and animated it in after effects and then used photoshop to export as a gif. Then I used some of the external libraries to ad the gif to imageview and holded the activity using countdown timer for 3 seconds before going to the next activity.
 
 
 - Home Page with Projects:-
 
- <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/home_page.png?raw=true"  
-alt="Markdown Monster icon"  
+![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/home_page.png?raw=true)
 style="float: left; margin-right: 10px;" />
 I made the page using recyclerView. Firstly I created a layout for a single project. Then I joined it to the recyclerView. I made a different file for project names and added a few of the projects to it as the api is not available. The code was like taking the count of the projects and displayed them one by one. Also I paired the correct image with the correct title. Then I added onclickListener to the imageview so as to get to the correct login page as it was required to.
 
 
 - Login Page for OSGeo-Track and Github:-
 
- <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/login_1.png?raw=true"  
-alt="Markdown Monster icon"  
-style="float: left; margin-right: 10px;" />
- <img src="https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/login_2.png?raw=true"  
-alt="Markdown Monster icon"  
-style="float: left; margin-right: 10px;" />
+![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/login_1.png?raw=true)
+![](https://github.com/TanvirSingh007/OSGeo-App/blob/master/screenshots%20for%20readme/login_2.png?raw=true)
+
 There was not much action in the login pages, almost all of it was just designing it. I took a few references from the internet for the designs that I could possibly make. I had a little bit experience in CSS so it was easy to understand how to do that. I made different files for text background, page background and the login button. Also I created variables for colors that were same color was used in multiple things.
 
 ## What I learned
